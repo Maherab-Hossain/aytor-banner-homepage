@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p, span, ol, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+}
+
+/* pre load start */
+.preload {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.582);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25ms;
+}
+.preload .prebox {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border-top: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid transparent;
+  animation: preloader 1s linear infinite forwards;
+}
+
+@keyframes preloader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* pre load end */
+#modalCnt .upbutton {
+  position: fixed;
+  right: 40px;
+  bottom: 80px;
+  z-index: 9999;
+}
+#modalCnt .upbutton .btnBox {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: #FF6F61;
+  cursor: pointer;
+}
+#modalCnt .upbutton .modalBtn {
+  width: 60px;
+  height: 60px;
+}
+#modalCnt .modalSendTextBtn {
+  width: 196.364px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+}
+#modalCnt .modalSendTextBtn span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+
+nav .navOption {
+  padding: 37px 0px;
+}
+nav .navOption ul li {
+  padding: 0px 22px;
+}
+@media (992px <= width <= 1199px) {
+  nav .navOption ul li {
+    padding: 0px 0px;
+  }
+}
+nav .navOption a {
+  color: #11161E;
+  font-size: 16px;
+  font-weight: 400;
+}
+nav .navButton li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+nav .navButton li span, nav .navButton li a {
+  color: #151A32;
+  font-size: 24px;
+  position: relative;
+}
+nav .navButton li span .cart, nav .navButton li a .cart {
+  position: absolute;
+  right: -6px;
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FF6F61;
+  font-size: 14px;
+  color: #fff;
+  line-height: 17px;
+  text-align: center;
+}
+
+.menuSm .menuSmBar button {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+}
+.menuSm .searchbarSm {
+  width: 100%;
+  height: 70px;
+}
+.menuSm .searchbarSm .sideBarSearch {
+  border: transparent;
+  padding: -5 50px 0 18px;
+  height: 70px;
+  font-weight: 600;
+}
+.menuSm .searchbarSm .sideSearchButton {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  text-align: center;
+}
+
+#banner {
+  position: relative;
+}
+#banner .bannerSlide {
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+}
+#banner .bannerSlide .bannerCnt {
+  color: #1D1D1D;
+}
+#banner .bannerSlide .bannerCnt h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 14px;
+  transition-delay: 0.2s;
+}
+#banner .bannerSlide .bannerCnt h2 {
+  font-size: clamp(18px, 12vw, 64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 74px;
+  transition-delay: 0.25s;
+}
+#banner .bannerSlide .bannerCnt p {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 29px;
+  font-weight: 400;
+  line-height: 28px;
+  transition-delay: 0.3s;
+}
+#banner .bannerSlide .bannerCnt a {
+  width: 196.364px;
+  height: 56px;
+  background-color: #FF6F61;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 37px;
+  position: relative;
+  transition-delay: 0.35s;
+}
+#banner .bannerSlide .bannerCnt a span {
+  font-size: 18px;
+  position: absolute;
+  top: 17px;
+}
+#banner .bannerSlide .bannerCnt > * {
+  transform: translateY(-500px);
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+#banner .bannerSlide.slick-active .bannerCnt > * {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#banner .banner_slider_dot {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#banner .banner_slider_dot li {
+  display: inline-block;
+}
+#banner .banner_slider_dot li button {
+  width: 15px;
+  height: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: transparent;
+  margin-right: 15px;
+  transition: 0.35s ease;
+}
+#banner .banner_slider_dot li.slick-active button {
+  width: 30px;
+  background-color: #FF6F61;
+}/*# sourceMappingURL=style.css.map */

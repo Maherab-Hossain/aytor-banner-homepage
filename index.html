@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor</title>
+
+    <!-- CSS LINKS START -->
+    
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!-- CSS LINKS END -->
+
+</head>
+<body>
+
+  
+    <!-- pre load start -->
+
+    <div class="preload">
+      <div class="prebox">
+
+      </div>
+  </div>
+
+  <!-- pre load end -->
+
+  <!-- MODAL FORM START -->
+
+  <div class=" modal-fullscreen-sm-down" id="modalCnt">
+   
+    <div class="upbutton">
+      <button type="button" class="btnBox " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+      
+        <img src="./images/modal button.gif" alt="" class="modalBtn">
+      </button>
+    </div>
+    
+    
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="./images/sm logo.png" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn  modalSendTextBtn">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- MODAL FORM END -->
+
+    <!-- NAV START -->
+
+
+    <!-- ********* NAV lg START ********** --> 
+    <nav class="navbar navbar-expand-lg d-none d-lg-block" id="menu">
+        <div class="container">
+
+          <a class="navbar-brand" href="#">
+            <img src="./images/aytor nav logo.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navOption" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blogs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Contact</a>
+              </li>
+             
+            </ul>
+          </div>
+
+          <div class="navButton">
+
+            <ul>
+                <li>
+                    <span><iconify-icon icon="mingcute:search-line" rotate="90deg"></iconify-icon></span>
+                </li>
+                <li>
+                    <a href="#"><iconify-icon icon="fluent-mdl2:contact"></iconify-icon></a>
+                </li>
+                <li>
+                    <a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a>
+                </li>
+                <li>
+                    <a href="#"><iconify-icon icon="uil:cart"></iconify-icon>
+
+                      <div class="cart">
+                        0
+                      </div>
+                </a>
+                </li>
+                
+            </ul>
+
+          </div>
+
+        </div>
+      </nav>
+      <!-- ********* NAV lg END ********** --> 
+
+
+      <!-- ********* NAV sm START ********** --> 
+
+
+      <nav class="navbar navbar-sm d-block d-lg-none menuSm">
+        <div class="container">
+          <div class="row w-100 align-items-center">
+
+            <div class="col-3 menuSmBar text-start">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><iconify-icon icon="mingcute:menu-fill"></iconify-icon></button>
+            </div>
+            <div class="col-6 text-center">
+              <img src="./images/sm logo.png" alt="">
+            </div>
+            <div class="col-3 text-end">
+              <div class="navButton">
+                <ul>
+                    <li>
+                        <a href=""><iconify-icon icon="uil:cart"></iconify-icon>
+    
+                          <div class="cart">
+                            0
+                          </div>
+                    </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SIDE MENU START -->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+               <!-- SIDE BAR LOGO/BUTTON -->
+                <div class="logoSm">
+                  <img src="./images/sm logo.png" alt="">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <!-- SIDE BAR LOGO/BUTTON -->
+
+              <div class="offcanvas-body">
+                <!-- SEARCH BAR -->
+                <div>
+                  <div class="searchbarSm ">
+
+                    <form class="">
+                      <!-- <label id="sideSearch"></label> -->
+                      <input type="search" class="sideBarSearch " placeholder="Search for products" value=""   >
+                      <button type="button" class="sideSearchButton"><iconify-icon icon="iconamoon:search"></iconify-icon></button>
+                    </form>
+
+                  </div>
+                </div>
+                <!-- SEARCH BAR -->
+
+                <!-- menu/categories start -->
+
+                <!-- <p>
+                  <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">MENU</a>
+                  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">CATEGORIES</button>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body ">
+            
+                        <div class="dropdown mt-3">
+                              
+                          <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                            <li class="nav-item">
+                              <a class="nav-link "  href="#">Home</a>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                           
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Features
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                           
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Blogs
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item">
+                              <a class="nav-link "  href="#">Contact</a>
+                            </li>
+                           
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+            
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                        <ul class="navbar-nav mb-2 mb-lg-0 ">
+                          <li>
+                            <a href="">Food and beverage</a>
+                          </li>
+                          <li>
+                            <a href="">Books,games.</a>
+                          </li>
+                          <li>
+                            <a href=""> Movies, music.</a>
+                          </li>
+                          <li>
+                            <a href="">Furniture and decor.</a>
+                          </li>
+                          <li>
+                            <a href="">Consumer electronics.</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- menu/categories end -->
+
+                <div class="dropdown mt-3">
+                  
+                  <hr class="border-2">
+
+                  <ul class="navbar-nav mb-2 mb-lg-0  m-auto">
+                    <li class="nav-item">
+                      <a class="nav-link "  href="#">Home</a>
+                    </li>
+                    <hr class="border-2">
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <hr class="border-2">
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <hr class="border-2">
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Features
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <hr class="border-2">
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Blogs
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <hr class="border-2">
+                     
+                    <li class="nav-item">
+                      <a class="nav-link "  href="#">Contact</a>
+                    </li>
+                    <hr class="border-2">
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- SIDE MENU END -->
+
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- ********* NAV sm END ********** --> 
+
+
+    <!-- NAV END -->
+
+ <!-- BANNER START -->
+
+      <section id="banner">
+
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-3.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+                 
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider\ 7.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-2.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-4.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-5.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bannerSlide"  style="background-image: url(./images/banner\ slider-1.jpg);">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="bannerCnt col-lg-5">
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                <p>Objectively incubate enabled innovation through leveraged <br> mindshare. Competently.</p>
+
+                <a href="#">Show More &nbsp;
+                  <span><iconify-icon icon="bi:arrow-right"></iconify-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </section>
+
+ <!-- BANNER END -->
+    
+    
+   
+
+
+
+
+
+
+<!-- JS LINKS START -->
+
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/typeit.umd.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/iconify-icon.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/app.js"></script>
+
+<!-- JS LINKS END -->
+
+
+</body>
+</html>
